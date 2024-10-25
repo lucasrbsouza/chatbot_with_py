@@ -1,7 +1,7 @@
 #Versão 2
 import google.generativeai as genai
 
-genai.configure(api_key = "AIzaSyB8lI0i5QJ3tSBGp7DuJRqGJoOzE-QLvxg")
+genai.configure(api_key = {GOOGLE_API})
 
 model = genai.GenerativeModel("gemini-1.5-flash", system_instruction="Seu nome vai ser 'Yan do ICEV', e voce vai ser especialista em gatos")
 chat = model.start_chat(
